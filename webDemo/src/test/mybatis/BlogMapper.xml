@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jielan.mybatis.BlogMapper">
+
+	<select id="selectOne" resultType="com.jielan.mybatis.Blog">
+		select * from blog where id=2;
+	</select>
+	
+	
+<!-- 查询分页 
+
+
+
+ <select id="selectDepartmentBeans" parameterType="map" resultType="DepartmentBean">
+  SELECT *from jlop_department d where 1=1 and d.isDel = 1    
+        <if test="model.depName != null and  model.depName  != '' ">
+           and d.depName  like concat('%',#{model.depName},'%')
+        </if>
+        
+  order by createTime desc  
+   <if test=" pageUtil!= null">
+			   limit #{pageUtil.start},#{pageUtil.numPerPage}
+			</if>
+ </select>	
+ 
+ <! 查询分页 
+ <select id="countDepartmentBeans" parameterType="map" resultType="int">
+ 
+  	SELECT count(1) from jlop_department d where 1=1 and d.isDel = 1
+  	
+        <if test="model.depName  != null and model.depName != ''">
+           and d.depName  like concat('%',#{model.depName},'%')
+        </if>
+         <if test="avalidateDepName  != null and avalidateDepName != ''">
+           and d.depName=#{avalidateDepName}
+        </if>
+ </select>	
+ -->
+</mapper>
