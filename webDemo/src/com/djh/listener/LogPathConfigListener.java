@@ -16,6 +16,7 @@ public class LogPathConfigListener implements ServletContextListener {
 		System.setProperty("workdir", path);
 
 		LoggerFactory.getLogger(LogPathConfigListener.class).debug("初始日志工具");
+	
 	}
 
 	public void contextDestroyed(ServletContextEvent sce) {
