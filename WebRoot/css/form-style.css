@@ -1,0 +1,122 @@
+table,tr,th,td,tbody,ul,li,label,input{
+    margin: 0;
+    padding: 0;
+}
+.form-list .date-form{
+    width: 390px;
+    float: left;
+    background-color: #fefefe;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+.date-form:nth-child(3n+1){
+    margin-right: 0;
+}
+.date-form table{
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    border-collapse:collapse;
+    border: 1px solid #d9d9d9;
+}
+.date-form table tr{
+    height: 45px;
+}
+.date-form table .child{
+    height: 25px;
+    width: 100%;
+    background-color: #bbaf93;
+}
+.date-form table .child td{
+    background-color: #bbaf93;
+}
+.date-form table tr td{
+    border-right: 1px solid #d9d9d9;
+}
+.date-form table .title th{
+    background-color: #ebebeb;
+}
+.date-form table  .tips{
+    width: 80px;
+    border-right:1px solid #d9d9d9 ;
+}
+.date-form table tr:nth-child(odd){
+    background-color: #f5f5f5;
+}
+.out{
+    border-top:50px #ebebeb solid;
+    width:0px;
+    height:0px;
+    border-left:80px #d6d6d6 solid;
+    position:relative;
+    left: -1px;
+}
+b{
+    font-style:normal;
+    display:block;
+    position:absolute;
+    top:-42px;
+    left:-40px;
+    width:35px;
+}
+em{
+    font-style:normal;
+    display:block;
+    position:absolute;
+    top:-25px;
+    left:-76px;
+    width:36px;
+}
+.child{
+    display: none;
+}
+.form-list {
+    width:1200px;
+    margin: 0 auto;
+}
+.form-list ul li{
+    list-style: none;
+    float: left;
+}
+.form-list ul li label{
+    display: inline-block;
+    width: 63px;
+    text-align: center;
+    font-size: 14px;
+    color:#666666;
+    padding:0 6px 0 0;
+}
+.form-list ul li input{
+    width: 80px;
+    padding:3px 8px;
+    margin-right: 10px;
+}
+.form-list ul li  .some_class{
+    width: 100px;
+}
+.search{
+    overflow: hidden;
+    padding: 25px 0;
+    text-align: left;
+}
+.form-list ul li a{
+    display: inline-block;
+    font-size: 14px;
+    padding: 3px 20px;
+    margin:0 15px ;
+    color: #333333;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 1px 2px #bebebe;
+    border-radius: 2px;
+}
+.form-list ul li a:last-child{
+    margin-right: 0;;
+}
+.form-img{
+    clear: both;
+    width: 1200px;
+    height: 400px;
+    background-color: #bbaf93;
+}

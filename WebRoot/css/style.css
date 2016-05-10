@@ -1,0 +1,634 @@
+/*主样式文件*/
+html{
+    font-size: 6px;
+    font-family: "Microsoft YaHei";
+}
+.container{
+    margin-bottom: 15rem;
+}
+.top-tip{
+    padding:2rem;
+    margin: 0 auto;
+}
+.icon-step{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.icon-step ul{
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+.icon-step .text span{
+    font-size: 2.4rem;
+}
+.icon-step ul li{
+    float: left;
+    display:block;
+    width: 33.3%;
+    text-align: center;
+    list-style: none;
+    text-align: center;
+}
+.icon-step .text li{
+   width: 33.3%;
+}
+ .icon{
+    display: inline-block;
+    width:3rem;
+    height:3rem;
+    border-radius: 50%;
+    background-color: antiquewhite;
+}
+.main-list{
+    text-align: center;
+}
+.main-list img{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.list-info{
+    text-align: center;
+    margin: 1.5rem 1rem;
+    overflow: hidden;
+}
+.list-info .info{
+    text-align: left;
+    font-size: 2.4rem;
+    color: #999999;
+}
+.list-info .info p{
+    width: 60%;
+    font-weight: bold;
+    color: #b1130d;
+    float: left;
+    padding-bottom: .3rem;
+}
+.list-info .info p span{
+    display: inline-block;
+    width: 40%;
+    color: #999999;
+}
+.list-info  .btn a{
+    display:inline-block;
+    font-size: 2.8rem;
+   padding: 1.2rem 5rem;
+    text-align: center;
+    background-color: #b1130d;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+
+}
+.list-info  .btn{
+    position:absolute;
+    right:1rem;
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    border-top: solid 1px #cdcdcd;
+}
+.footer ul li{
+    float: left;
+    list-style: none;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.footer ul li a{
+    font-size: 2.6rem;
+    color: #999999;
+    text-decoration: none;
+    -webkit-tap-highlight-color:transparent;
+}
+.footer ul li a span{
+    margin-bottom: 1rem;
+}
+.wraper{
+    min-height: 100vh;
+    background-color: #eeeeee;
+    margin-bottom: 11rem;
+}
+/*发现页面CSS*/
+.menu{
+    padding: 0 1rem;
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 11rem;
+}
+.menu ul{
+    overflow: hidden;
+}
+.menu ul li{
+    display: inline-block;
+    float: left;
+    width: 39%;
+    padding: 3rem 0;
+    padding-left: 10%;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+.menu ul li a span{
+    font-size: 2.8rem;
+    color: #333333;
+}
+.menu ul li:nth-child(even){
+    border-right: none;
+}
+.menu ul .border{
+    border-bottom: none;
+}
+.icon-center{
+    display: inline-block;
+    width: 40px;
+}
+/*轮播*/
+.slideBox{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+.slideBox .hd{
+    height:15px;
+    overflow:hidden;
+    position:absolute;
+    right:50%;
+    margin-right: -26px;
+    bottom:5px;
+    z-index:1;
+}
+.slideBox .hd ul{
+    overflow:hidden;
+    zoom:1;
+    float:left;  }
+.slideBox .hd ul li{
+    float:left;
+    margin-right:7px;
+    width:10px;
+    height:10px;
+    line-height:14px;
+    text-align:center;
+    background:#fff;
+    cursor:pointer;
+    border-radius: 50%;
+}
+.slideBox .hd ul li.on{
+    background:#bbaf93;
+    color:#fff;
+}
+.slideBox .bd{
+    position:relative;
+    height:100%;
+    z-index:0;
+}
+.slideBox .bd li{
+    zoom:1;
+    vertical-align:middle;
+}
+.slideBox .bd img{
+    width:100%;
+    display:block;
+}
+.state{
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.state ul li{
+    display: inline-block;
+    width: 33%;
+    float: left;
+    font-size: 2.6rem;
+    padding: .5rem 0;
+    text-align: center;
+    border-right: 1px solid #cccccc;
+}
+.state ul li span{
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+.state ul:last-child{
+    border: none;
+}
+.my-info{
+    padding: 7rem 1rem;
+    overflow: hidden;
+    background-image: url("../images/center-bj.png");
+}
+.my-info .img{
+    float: left;
+    width:15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #da7f3a;
+
+}
+.my-info  .info{
+    float: left;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+.my-info  .info p{
+    color: #fff;
+    font-size: 2.8rem;
+    margin-bottom: .2rem;
+}
+.my-info .btn-right{
+    float: right;
+    margin-top:6rem;
+}
+.icon-arrow{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/arrow.png");
+    background-size: 10px 20px;
+    background-repeat: no-repeat;
+}
+.icon-arrow-o{
+    display: inline-block;
+    position: relative;
+    top:6px;
+    margin-left: 5px;
+    width: 10px;
+    height: 20px;
+    background-image: url("../images/arrow-o.png");
+    background-size: 8px 16px;
+    background-repeat: no-repeat;
+}
+.icon-check{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/center-01.png");
+    background-size: 20px 25px;
+    background-repeat: no-repeat;
+}
+.icon-money{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/center-06.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+.icon-card{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/center-02.png");
+    background-size: 25px 19px;
+    background-repeat: no-repeat;
+}
+.icon-bank{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/center-03.png");
+    background-size: 25px 19px;
+    background-repeat: no-repeat;
+}
+.icon-news{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/news.png");
+    background-size: 23px 25px;
+    background-repeat: no-repeat;
+}
+.icon-friend{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/friend.png");
+    background-size: 24px 23px;
+    background-repeat: no-repeat;
+}
+.icon-post{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/post.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+.icon-question{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/question.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+.icon-us{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/about.png");
+    background-size: 25px 21px;
+    background-repeat: no-repeat;
+}
+.icon-point{
+    display: inline-block;
+     float: right;
+    width: 20px;
+    height:20px;
+    margin-top: 5px;
+    margin-right: 6px;
+    background-image: url("../images/point.png");
+    background-size: 19px 19px;
+    background-repeat: no-repeat;
+}
+.icon-counter{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/counter.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+.icon-massege{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/center-04.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+.icon-my{
+     display: inline-block;
+     position: relative;
+     top: 13px;
+     width: 30px;
+     height:30px;
+     background-image: url("../images/center-05.png");
+     background-size: 25px 25px;
+     background-repeat: no-repeat;
+ }
+.icon-index{
+     display: inline-block;
+     position: relative;
+     top: 13px;
+     left: 2px;
+     width: 30px;
+     height:30px;
+     background-image: url("../images/home.png");
+     background-size: 25px 25px;
+     background-repeat: no-repeat;
+ }
+.icon-index-on{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    left: 2px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/index-on%20.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+.icon-user{
+     display: inline-block;
+     position: relative;
+     top: 13px;
+     left: 2px;
+     width: 30px;
+     height:30px;
+     background-image: url("../images/user.png");
+     background-size: 25px 25px;
+     background-repeat: no-repeat;
+ }
+.icon-user-on{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    left: 2px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/user.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+.icon-user{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    left: 2px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/user-on.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+.icon-discover{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    left: 1px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/discover.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+.icon-discover-on{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    left: 1px;
+    width: 30px;
+    height:30px;
+    background-image: url("../images/discover-on.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+.icon-name{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    width: 40px;
+    height:40px;
+    background-image: url("../images/name.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+.icon-safe{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    width: 40px;
+    height:40px;
+    background-image: url("../images/safe.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+.icon-face{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    width: 40px;
+    height:40px;
+    background-image: url("../images/face.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+.user-info{
+    position: relative;
+    top: 2rem;
+    background-color: #fff;
+    padding:0 2rem;
+}
+.user-info ul li{
+    width: 100%;
+    font-size: 2.6rem;
+    overflow: hidden;
+    padding: 2rem 0;
+    /*margin: 0 2rem;*/
+    border-bottom:1px solid #e7e7e7;
+}
+.user-info ul li:last-child{
+    border: none;
+}
+.user-info ul li p:first-child{
+    float: left;
+}
+.main-wraper{
+    min-height: 100vh;
+    background-color: #eeeeee;
+    padding: 0;
+    margin: 0;
+}
+.user-info ul li p:last-child{
+    float: right;
+}
+.relogin{
+    clear: both;
+    font-size: 3rem;
+    display: block;
+    width: 96%;
+    position: relative;
+    top: 5rem;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: #b1130d;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.schedule{
+    /*width: 96%;*/
+    /*margin: 0 auto;*/
+}
+.schedule>p{
+    font-size: 2.4rem;
+    padding: 1.5rem 0;
+    color: #666666;
+    text-align: center;
+}
+.schedule-info{
+    width: 92%;
+    margin: 0 auto;
+    padding:2rem 2%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.schedule-info h2{
+    font-size: 3rem;
+}
+.schedule-info p{
+    font-size:2.6rem ;
+    line-height: 4.5rem;
+}
+.schedule-info p span{
+    color: #666666;
+}
+.schedule-info p .time{
+    float: right;
+}
+.about{
+    display: block;
+    margin: 0 auto;
+    padding-top: 15rem;
+}
+.version{
+    font-size: 2.4rem;
+    color: #333333;
+    text-align: center;
+    margin: 2.5rem;
+}
+.address{
+    font-size: 2.4rem;
+    color:#666666;
+    text-align: center;
+    line-height: 4rem;
+    margin-top:6rem;
+}
+.user-info .message{
+    width:85%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.news{
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+.news img{
+    float: left;
+    margin-right: 2rem;
+    width: 100px;
+}
+.news .content  h2{
+    font-size: 3.4rem;
+    color: #333333;
+    padding-bottom: 1rem;
+}
+.news .content p{
+    font-size:2.4rem;
+    color: #666666;
+    line-height: 4rem;
+}
