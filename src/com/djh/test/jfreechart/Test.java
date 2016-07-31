@@ -35,7 +35,7 @@ public class Test extends ApplicationFrame{
 //		for(Integer var:m.keySet()){
 //			defaultcategorydataset.addValue(m.get(var), series1, var);
 //		}
-		Map<Integer, Double> map = RandomNumber.getTan();
+		Map<Integer, Double> map = RandomNumber.getGaussian();
 		for(Integer var:map.keySet()){
 			defaultcategorydataset.addValue(map.get(var), series1, var);
 		}

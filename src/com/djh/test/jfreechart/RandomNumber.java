@@ -8,16 +8,16 @@ public class RandomNumber {
 
 	static int N = 4000;
 	static int piN = (int) (Math.PI*1000);
-	public static Map<Integer, Integer> getMap() {
-		Map<Integer, Integer> map = new LinkedHashMap<Integer, Integer>();
+	public static Map<Integer, Double> getMap() {
+		Map<Integer, Double> map = new LinkedHashMap<Integer, Double>();
 		for(Integer i=-N;i<=N;){
-			map.put(i, 0);
+			map.put(i, 0d);
 			i = i+1;
 		}
 		return map;
 	}
-	public static Map<Integer, Integer> getGaussian() {
-		Map<Integer, Integer> map = getMap();
+	public static Map<Integer, Double> getGaussian() {
+		Map<Integer, Double> map = getMap();
 		Random random = new Random();
 		for(int i=0;i<1000000;i++){
 			double r = random.nextGaussian();
