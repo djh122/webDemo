@@ -61,6 +61,7 @@ public class Db {
 
 	public static List<Map<String, Object>> getList(String sql) {
 		try{
+			System.out.println(sql);
 			PreparedStatement ps = getConnection().prepareStatement(sql);
 			
             ResultSet rs = ps.executeQuery(); 

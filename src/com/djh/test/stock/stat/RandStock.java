@@ -1,4 +1,4 @@
-package com.djh.test.stock;
+package com.djh.test.stock.stat;
 
 import java.util.Map;
 import java.util.Random;
@@ -28,15 +28,16 @@ public class RandStock implements Runnable{
 			}
 			start = start*(1+s);
 			start = getScala(start, 1);
+			
 			startf = startf*(1+increase_v);
 			startf = getScala(startf, 1);
 			//if(i%250==0)
 			System.out.println(start+"交易日"+i+"==="+startf+"ssss"+getScala(s, 4));
-			try {
-				Thread.sleep(10);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
+//			try {
+//				Thread.sleep(10);
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
 		}
 		
 	}
