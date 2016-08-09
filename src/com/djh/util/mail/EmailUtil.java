@@ -1,4 +1,4 @@
-package com.djh.test.mail;
+package com.djh.util.mail;
 
 import java.io.File;
 
@@ -8,7 +8,7 @@ import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.MultiPartEmail;
 import org.apache.commons.mail.SimpleEmail;
 
-public class Test {
+public class EmailUtil {
 
 	public static String send(String from,String password,String to,String subject,String msg,File attachment) throws EmailException {
 		String host = "smtp."+from.substring(from.indexOf('@')+1); 
