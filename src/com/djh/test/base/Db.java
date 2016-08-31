@@ -157,8 +157,8 @@ public class Db {
 		//System.out.println(query("select * from eacc_accountinfo"));
 		//ResultSet rs = query("select * from prod_productinfo");
 		//System.out.println(rs.getRow());
-		toString(getOne("select * from eacc_accountinfo"));
-		toString(getList("select * from eacc_accountinfo where eacc_no=123456789"));
+		toString(getList("select * from stock"));
+		//toString(getList("select * from eacc_accountinfo where eacc_no=123456789"));
 		//}
 		//new Date()
 	}

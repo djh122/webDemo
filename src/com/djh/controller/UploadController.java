@@ -2,6 +2,7 @@ package com.djh.controller;
 
 import java.io.UnsupportedEncodingException;
 
+import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -16,7 +17,7 @@ public class UploadController {
 	@RequestMapping(value="imageUpload.do")
 	public String imageUpload(HttpServletRequest request,HttpServletResponse response) throws UnsupportedEncodingException {
 		request.setCharacterEncoding("utf-8");
-		response.setCharacterEncoding("utf-8");
+		((ServletRequest) response).setCharacterEncoding("utf-8");
 	    Uploader up = new Uploader(request);
 	    up.setSavePath("upload");
 	    String[] fileType = {".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"};

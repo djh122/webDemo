@@ -7,11 +7,6 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="com.genuitec.runtime.library/com.genuitec.generic_6.0">
-		<attributes>
-			<attribute name="owner.project.facets" value="jst.web"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="com.genuitec.runtime.library/com.genuitec.jstl_1.2.1">
 		<attributes>
@@ -21,14 +16,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
-	<classpathentry kind="lib" path="C:/Users/djh/Desktop/apache/JFreeChart/gnujaxp.jar"/>
-	<classpathentry kind="lib" path="C:/Users/djh/Desktop/apache/JFreeChart/iText-2.1.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/djh/Desktop/apache/JFreeChart/jcommon-1.0.16.jar"/>
-	<classpathentry kind="lib" path="C:/Users/djh/Desktop/apache/JFreeChart/jfreechart-1.0.13.jar"/>
-	<classpathentry kind="lib" path="C:/Users/djh/Desktop/apache/JFreeChart/jfreechart-1.0.13-experimental.jar"/>
-	<classpathentry kind="lib" path="C:/Users/djh/Desktop/apache/JFreeChart/jfreechart-1.0.13-swt.jar"/>
-	<classpathentry kind="lib" path="C:/Users/djh/Desktop/apache/JFreeChart/junit.jar"/>
-	<classpathentry kind="lib" path="C:/Users/djh/Desktop/apache/JFreeChart/servlet.jar"/>
-	<classpathentry kind="lib" path="C:/Users/djh/Desktop/apache/JFreeChart/swtgraphics2d.jar"/>
+	<classpathentry kind="con" path="com.genuitec.runtime.library/com.genuitec.generic_6.0"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

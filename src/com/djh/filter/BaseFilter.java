@@ -20,7 +20,7 @@ public class BaseFilter implements Filter{
 			FilterChain chain) throws IOException, ServletException {
 		//字符编码预处理
 		request.setCharacterEncoding("utf-8");
-		response.setCharacterEncoding("utf-8");
+		((ServletRequest) response).setCharacterEncoding("utf-8");
 		chain.doFilter(request, response);
 	}
 
