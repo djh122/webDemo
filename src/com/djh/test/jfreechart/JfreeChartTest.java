@@ -11,6 +11,10 @@ import org.jfree.chart.plot.PlotOrientation;
 
 public class JfreeChartTest extends ApplicationFrame  {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public JfreeChartTest(String title) {
 		super(title);
 		// TODO Auto-generated constructor stub

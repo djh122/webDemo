@@ -12,10 +12,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-
-
 import com.djh.exception.ParamException;
-import com.djh.test.TestBean;
 
 
 public class Inject{
@@ -143,10 +140,6 @@ public class Inject{
 	}
 	
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, ParseException {
-		Map<String,String> params = new HashMap<String,String>();
-		params.put("name", "djh");
-		params.put("age", "12");
-		TestBean testBean = map2bean(params, TestBean.class);
-		System.out.println(testBean.getAge());
+		
 	}
 }

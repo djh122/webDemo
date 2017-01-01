@@ -12,6 +12,13 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.util.EntityUtils;
+import org.htmlparser.Node;
+import org.htmlparser.Parser;
+import org.htmlparser.util.NodeList;
+import org.htmlparser.util.ParserException;
+import org.htmlparser.util.SimpleNodeIterator;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 
 public class HttpClientUtil {
 	
@@ -93,8 +100,14 @@ public class HttpClientUtil {
 		}
 		return ret;
 	}
+
+	
 	public static void main(String[] args) throws IOException {
-		HttpClientUtil.get("192.168.18.141:8080/getDemo/test.do", "utf-8");
+		//System.out.println(HttpClientUtil.get("http://vip.stock.finance.sina.com.cn/corp/go.php/vMS_MarketHistory/stockid/600571.phtml?year=2015&jidu=1", "gbk"));
+		Document doc = Jsoup.connect("http://vip.stock.finance.sina.com.cn/corp/go.php/vMS_MarketHistory/stockid/600571.phtml?year=2015&jidu=1").get();
+		String title = doc.title();
+		System.out.println(title);
+		System.out.println(doc.select("#FundHoldSharesTable"));
 	}
 
 }

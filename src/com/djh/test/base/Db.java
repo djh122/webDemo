@@ -16,9 +16,12 @@ import java.util.Map;
  */
 public class Db {
 	//连接地址、用户名、密码
-	final static String url = "jdbc:mysql://localhost:3306/stock?useUnicode=true&amp;characterEncoding=utf-8";
+	final static String url = "jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf-8";
 	final static String user = "root";
-	final static String password = "000000";
+	final static String password = "123456";
+//	final static String url = "jdbc:mysql://120.26.220.33:3306/test?useUnicode=true&amp;characterEncoding=utf-8";
+//	final static String user = "root";
+//	final static String password = "sunyard@33";
 	//驱动名
 	final static String driver = "com.mysql.jdbc.Driver";
 	
@@ -157,9 +160,10 @@ public class Db {
 		//System.out.println(query("select * from eacc_accountinfo"));
 		//ResultSet rs = query("select * from prod_productinfo");
 		//System.out.println(rs.getRow());
-		toString(getList("select * from stock"));
+//		toString(getList("select * from stock"));
 		//toString(getList("select * from eacc_accountinfo where eacc_no=123456789"));
 		//}
 		//new Date()
+		System.out.println(Db.getOne("select now()"));
 	}
 }
